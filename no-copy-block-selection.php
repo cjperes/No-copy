@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: No copy
+ * Plugin Name: No copy block text selection
  * Plugin URI: https://github.com/cjperes/no-copy
  * Description: Simple plugin for turning off copies on a website
  * Author: Caio Peres
@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // tela branca caso o plugin for acessado direto
 }
 
-// add function in footer
+// adicionar função ao footer do wordpress
 add_action( 'wp_footer', 'my_footer_scripts' );
 function my_footer_scripts(){
   ?>
