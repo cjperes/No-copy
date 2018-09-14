@@ -12,3 +12,10 @@ Works perfectly with all themes and editors of Wordpress
 
 
 The software is licensed to you "as is" and without any warranty. If you do not agree to the license, do not use the software.
+
+== Installation ==
+
+
+1. Upload the plugin files to the `/wp-content/plugins/no-copy-block-selection` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Done
