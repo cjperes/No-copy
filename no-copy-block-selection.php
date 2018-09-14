@@ -14,23 +14,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // adicionar função ao footer do wordpress
-add_action( 'wp_footer', 'my_footer_scripts' );
-function my_footer_scripts(){
+add_action( 'wp_footer', 'ncjp_footer_scp' );
+function ncjp_footer_scp(){
   ?>
   <script language="javascript">
-    function clearData(){
+    function NcjpclearData(){
         window.clipboardData.setData('text','') 
     }
     function cldata(){
         if(clipboardData){
-            clipboardData.clearData();
+            clipboardData.NcjpclearData();
         }
     }
     setInterval("cldata();", 1000);
 </script>
 
 
-<body ondragstart="return false;" onselectstart="return false;"  oncontextmenu="return false;" onload="clearData();" onblur="clearData();">
+<body ondragstart="return false;" onselectstart="return false;"  oncontextmenu="return false;" onload="NcjpclearData();" onblur="NcjpclearData();">
   <?php
 }
 
