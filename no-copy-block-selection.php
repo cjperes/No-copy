@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: No copy block text selection
+ * Plugin Name: No copy allowed - Nork Digital
  * Plugin URI: https://github.com/cjperes/no-copy
- * Description: Simples plugin para bloquear copias de texto e print screen
+ * Description: Simples plugin para bloquear copias de texto, print screen e "imprimir" em PDF 
  * Author: Caio Peres
  * Author URI: https://github.com/cjperes
  * Version: 1.0.0
@@ -20,7 +20,7 @@ function ncjp_footer_scp(){
   <script language="javascript">
 
     function NcjpclearData(){
-        window.clipboardData.setData('text','') 
+        window.clipboardData.setData('text','')
     }
     function cldata(){
         if(clipboardData){
@@ -33,10 +33,11 @@ function ncjp_footer_scp(){
     document.addEventListener("keyup", function (e) {
     var keyCode = e.keyCode ? e.keyCode : e.which;
             if (keyCode == 44) {
-                stopPrntScr();
+                e.preventDefault();
+                NcjpstopPrntScr();
             }
         });
-function stopPrntScr() {
+function NcjpstopPrntScr() {
 
             var inpFld = document.createElement("input");
             inpFld.setAttribute("value", ".");
@@ -49,22 +50,21 @@ function stopPrntScr() {
             document.execCommand("copy");
             inpFld.remove(inpFld);
         }
-       function AccessClipboardData() {
+       function NcjpAccessClipboardData() {
             try {
                 window.clipboardData.setData('text', "Access   Restricted");
             } catch (err) {
             }
         }
-        setInterval("AccessClipboardData()", 300);
-  
+        setInterval("NcjpAccessClipboardData()", 300);
+
       </script>
+      <style type="text/css" media="print">
+    body { visibility: hidden; display: none }
+</style>
 
-    
 
-<body ondragstart="return false;" onselectstart="return false;"  oncontextmenu="return false;" onload="NcjpclearData(); " onblur="NcjpclearData();">
+<body ondragstart="return false;" onselectstart="return false;"  oncontextmenu="return false;" onload="NcjpclearData(); " onblur="NcjpclearData(); ">
   <?php
 }
-
-
-
 
