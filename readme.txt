@@ -21,8 +21,8 @@ if the user disables the browser javascript, this plugin will not work!
 
 The plugin is licensed to you "as is" and without any warranty. If you do not agree to the license, do not use.
 
-PT-BR
 
+PT-BR
 
 Plug-in simples para desativar cópias em um site
 
