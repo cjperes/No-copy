@@ -52,7 +52,7 @@ function NcjpstopPrntScr() {
         }
        function NcjpAccessClipboardData() {
             try {
-                window.clipboardData.setData('text', "Conteúdo protegido por direitos autorais.");
+                window.clipboardData.setData('text', "Access   Restricted");
             } catch (err) {
             }
         }
@@ -60,7 +60,7 @@ function NcjpstopPrntScr() {
 
       </script>
       <style type="text/css" media="print">
-    body { visibility: hidden !important; display: none!important; -moz-appearance: none; -webkit-appearance: none; }
+    body { visibility: hidden; display: none }
 </style>
 
 
