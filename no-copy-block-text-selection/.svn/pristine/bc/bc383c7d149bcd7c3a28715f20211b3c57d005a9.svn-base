@@ -2,7 +2,7 @@
 Contributors: cjperes
 Tags: block,copy,ctrlc,ctrlv,disable,print,screen,imprinter
 Requires at least: 4.5
-Tested up to: 5.6
+Tested up to: 5.3
 Stable tag: 4.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
@@ -25,7 +25,6 @@ if the user disables the browser javascript, this plugin will not work!
 The plugin is licensed to you "as is" and without any warranty. If you do not agree to the license, do not use.
 
 
-------
 
 PT-BR
 
