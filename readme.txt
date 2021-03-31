@@ -75,7 +75,7 @@ O plugin é licenciado para você "como está" e sem qualquer garantia. Se você
 = 1.0.0 - 2020/01/15 =
 - Lançamento do plugin.
 
-= 1.0.1 - 2020/01/15 =
+= 1.0.1 - 2021/03/31 =
 - Novas funcionalidades (Disable Ctrl+U (view source)
 Disable Ctrl+P (Print)
 Disable Ctrl+S (Save page)
