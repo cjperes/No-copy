@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name: No copy allowed - Nork Digital
- * Plugin URI: https://github.com/cjperes/no-copy
+ * Plugin URI: https://nork.digital
  * Description: Simples plugin para bloquear copias de texto, print screen, "imprimir" em PDF e desabilitar teclas
  * Author: Caio Peres
  * Author URI: https://github.com/cjperes
