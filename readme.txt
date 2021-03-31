@@ -1,8 +1,8 @@
 === No copy allowed - Nork Digital ===
 Contributors: cjperes
-Tags: block,copy,ctrlc,ctrlv,disable,print,screen,imprinter
+Tags: block,copy,ctrlc,ctrlv,disable,print,screen,imprinter,content,protect
 Requires at least: 4.5
-Tested up to: 5.6
+Tested up to: 5.7
 Stable tag: 4.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
@@ -15,12 +15,21 @@ Install, activate, and done!
 100% plug'n play
 No configuration is necessary, just activate the PLUGIN and it will be working
 
-Simple plugin for turning off copies on a website
-
 Light and simple
-This plugin uses javascript e css to disable the copy of text, disable printscreen and "bypass" the tecnic of Print to PDF and copy the text.
+Plugin for turning off copies on a website
 
-if the user disables the browser javascript, this plugin will not work!
+Functionalities:
+Disable copy of text
+Disable right mouse click
+Disable print screen
+Disable print to PDF
+Disable Ctrl+U (view source)
+Disable Ctrl+P (Print)
+Disable Ctrl+S (Save page)
+Disable Ctrl+C 
+Disable Ctrl+v
+
+If the user disables the browser javascript, this plugin can be bypass!
 
 The plugin is licensed to you "as is" and without any warranty. If you do not agree to the license, do not use.
 
@@ -33,12 +42,21 @@ INSTALE, ATIVE E PRONTO!
 100% plug'n play
 Não é necessário realizar nenhuma configuração, basta ativar o PLUGIN e pronto!
 
-Plug-in simples para desativar cópias em um site
-
 Leve e simples
-Este plugin usa javascript e css para desativar a cópia do texto, desativar o printscreen e "bloqueia" a técnica de Imprimir em PDF e copiar o texto.
+Plug-in para desativar cópias em um site
 
-se o usuário desabilitar o javascript do navegador, este plugin não funcionará!
+Funcionalidades:
+Desativar cópia de texto
+Desativar clique direito do mouse
+Desativar tela de impressão
+Desativar impressão em PDF
+Desativar Ctrl + U (ver fonte)
+Desativar Ctrl + P (Imprimir)
+Desativar Ctrl + S (Salvar página)
+Desativar Ctrl + C
+Desativar Ctrl + v
+
+se o usuário desabilitar o javascript do navegador, este plugin pode não funcionar!
 
 O plugin é licenciado para você "como está" e sem qualquer garantia. Se você não concorda com a licença, não use.
 
@@ -55,5 +73,11 @@ O plugin é licenciado para você "como está" e sem qualquer garantia. Se você
 == Changelog ==
 	
 = 1.0.0 - 2020/01/15 =
-
 - Lançamento do plugin.
+
+= 1.0.1 - 2020/01/15 =
+- Novas funcionalidades (Disable Ctrl+U (view source)
+Disable Ctrl+P (Print)
+Disable Ctrl+S (Save page)
+Disable Ctrl+C 
+Disable Ctrl+v ).
