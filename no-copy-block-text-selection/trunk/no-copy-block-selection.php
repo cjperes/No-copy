@@ -1,43 +1,47 @@
 <?php
+
 /**
  * Plugin Name: No copy allowed - Nork Digital
- * Plugin URI: https://github.com/cjperes/no-copy
- * Description: Simples plugin para bloquear copias de texto, print screen e "imprimir" em PDF 
+ * Plugin URI: https://nork.digital
+ * Description: Simples plugin para bloquear copias de texto, print screen, "imprimir" em PDF e desabilitar teclas
  * Author: Caio Peres
  * Author URI: https://github.com/cjperes
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // tela branca caso o plugin for acessado direto
+if (!defined('ABSPATH')) {
+    exit; // tela branca caso o plugin for acessado direto
 }
 
 // adicionar função ao footer do wordpress
-add_action( 'wp_footer', 'ncjp_footer_scp' );
-function ncjp_footer_scp(){
-  ?>
-  <script language="javascript">
-
-    function NcjpclearData(){
-        window.clipboardData.setData('text','')
-    }
-    function cldata(){
-        if(clipboardData){
-            clipboardData.NcjpclearData();
+add_action('wp_footer', 'ncjp_footer_scp');
+function ncjp_footer_scp()
+{
+?>
+    <script language="javascript">
+        function NcjpclearData() {
+            window.clipboardData.setData('text', '')
         }
-    }
-    setInterval("cldata();", 1000);
+
+        function cldata() {
+            if (clipboardData) {
+                clipboardData.NcjpclearData();
+            }
+        }
+        setInterval("cldata();", 1000);
 
 
-    document.addEventListener("keyup", function (e) {
-    var keyCode = e.keyCode ? e.keyCode : e.which;
+        document.addEventListener("keyup", function(e) {
+            var keyCode = e.keyCode ? e.keyCode : e.which;
             if (keyCode == 44) {
                 e.preventDefault();
                 NcjpstopPrntScr();
             }
         });
-function NcjpstopPrntScr() {
+
+
+        function NcjpstopPrntScr() {
 
             var inpFld = document.createElement("input");
             inpFld.setAttribute("value", ".");
@@ -50,21 +54,42 @@ function NcjpstopPrntScr() {
             document.execCommand("copy");
             inpFld.remove(inpFld);
         }
-       function NcjpAccessClipboardData() {
+
+        function NcjpAccessClipboardData() {
             try {
-                window.clipboardData.setData('text', "Access   Restricted");
-            } catch (err) {
-            }
+                window.clipboardData.setData('text', "Conteúdo protegido por direitos autorais.");
+            } catch (err) {}
         }
         setInterval("NcjpAccessClipboardData()", 300);
+    </script>
 
-      </script>
-      <style type="text/css" media="print">
-    body { visibility: hidden; display: none }
-</style>
+    <style type="text/css" media="print">
+        body {
+            visibility: hidden !important;
+            display: none !important;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+        }
+    </style>
+
+    <script language="javascript">
+        //desabilita ctrl + s; ctrl + u; ctrl+v; ctr+c; ctrl+p;
+        document.onkeydown = function(e) {
+            if (e.ctrlKey &&
+                (e.keyCode === 67 ||
+                    e.keyCode === 86 ||
+                    e.keyCode === 85 ||
+                    e.keyCode === 80 ||
+                    e.keyCode === 83 ||
+                    e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+    </script>
 
 
-<body ondragstart="return false;" onselectstart="return false;"  oncontextmenu="return false;" onload="NcjpclearData(); " onblur="NcjpclearData(); ">
-  <?php
+    <body ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false;" onload="NcjpclearData(); " onblur="NcjpclearData(); ">
+    <?php
 }
-
