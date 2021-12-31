@@ -1,8 +1,8 @@
 === No copy allowed - Nork Digital ===
 Contributors: cjperes
-Tags: block,copy,ctrlc,ctrlv,disable,print,screen,imprinter,content,protect
+Tags: block,block copy,block ctrlc,block ctrlv,disable copy,disable print,disable print screen,disable printer,content protect, disable copy, disable ctrlc, disable print screen
 Requires at least: 4.5
-Tested up to: 5.7
+Tested up to: 5.8.2
 Stable tag: 4.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
@@ -15,8 +15,7 @@ Install, activate, and done!
 100% plug'n play
 No configuration is necessary, just activate the PLUGIN and it will be working
 
-Light and simple
-Plugin for turning off copies on a website
+Plugin for disable and block copies on a website with a lot of functionalities.
 
 Functionalities:
 Disable copy of text
@@ -25,11 +24,12 @@ Disable print screen
 Disable print to PDF
 Disable Ctrl+U (view source)
 Disable Ctrl+P (Print)
+Disable Print with printer
 Disable Ctrl+S (Save page)
 Disable Ctrl+C 
 Disable Ctrl+v
 
-If the user disables the browser javascript, this plugin can be bypass!
+More locks coming soon!
 
 The plugin is licensed to you "as is" and without any warranty. If you do not agree to the license, do not use.
 
@@ -42,25 +42,26 @@ INSTALE, ATIVE E PRONTO!
 100% plug'n play
 Não é necessário realizar nenhuma configuração, basta ativar o PLUGIN e pronto!
 
-Leve e simples
-Plug-in para desativar cópias em um site
+Plugin para bloquear cópias em um site com várias funcionalidades.
 
 Funcionalidades:
 Desativar cópia de texto
 Desativar clique direito do mouse
-Desativar tela de impressão
+Desativar tecla Print Screen
 Desativar impressão em PDF
-Desativar Ctrl + U (ver fonte)
+Desativa impressão com impressoras
+Desativar Ctrl + U (ver código fonte)
 Desativar Ctrl + P (Imprimir)
 Desativar Ctrl + S (Salvar página)
 Desativar Ctrl + C
 Desativar Ctrl + v
 
-se o usuário desabilitar o javascript do navegador, este plugin pode não funcionar!
+Mais bloqueios em breve
 
 O plugin é licenciado para você "como está" e sem qualquer garantia. Se você não concorda com a licença, não use.
 
 
+Icon made by Freepik from Flaticon
 
 == Installation ==
 
@@ -81,3 +82,6 @@ Disable Ctrl+P (Print)
 Disable Ctrl+S (Save page)
 Disable Ctrl+C 
 Disable Ctrl+v ).
+
+= 1.0.2 - 2021/12/31 =
+- Melhoria na descrição do plugin
