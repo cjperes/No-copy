@@ -83,5 +83,5 @@ Disable Ctrl+S (Save page)
 Disable Ctrl+C 
 Disable Ctrl+v ).
 
-= 1.0.2 - 2021/12/31 =
+= 1.0.1 - 2021/12/31 =
 - Melhoria na descrição do plugin
