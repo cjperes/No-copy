@@ -98,8 +98,107 @@ function ncjp_admin_notice__success()
 {
     ?>
         <div class="notice notice-success is-dismissible">
-            <p><?php _e('Success! Your site is protected against copying content and images, consider rating the plugin with 5 stars ⭐⭐⭐⭐⭐, we encourage to constantly add new features!'); ?></p>
+            <p><?php _e('Success! Your site is protected against copying content and images, <a href="https://wordpress.org/support/plugin/no-copy-block-text-selection/reviews/#new-post" target="blank">If you like the plugin, consider rating the plugin with 5 stars ⭐⭐⭐⭐⭐, encourages us to add new features in the future!</a>'); ?></p>
         </div>
     <?php
 }
 add_action('admin_notices', 'ncjp_admin_notice__success');
+    ?>
+
+    <?php
+    class MySettingsPage
+    {
+        /**
+         * Holds the values to be used in the fields callbacks
+         */
+        private $options;
+
+        /**
+         * Start up
+         */
+        public function __construct()
+        {
+            add_action('admin_menu', array($this, 'add_plugin_page'));
+            add_action('admin_init', array($this, 'page_init'));
+        }
+
+        /**
+         * Add options page
+         */
+        public function add_plugin_page()
+        {
+            // This page will be under "Settings"
+            add_options_page(
+                'Settings Admin',
+                'Copy Protect',
+                'manage_options',
+                'my-setting-admin',
+                array($this, 'create_admin_page')
+            );
+        }
+
+        /**
+         * Options page callback
+         */
+        public function create_admin_page()
+        {
+            // Set class property
+            $this->options = get_option('my_option_name');
+    ?>
+            <div class="wrap">
+                <h1>Your site is protected!</h1>
+                <ul>
+                    <li>✔ Disable copy of text</li>
+                    <li>✔ Disable right mouse click</li>
+                    <li>✔ Disable print screen</li>
+                    <li>✔ Disable print to PDF</li>
+                    <li>✔ Disable Ctrl+U (view source)</li>
+                    <li>✔ Disable Ctrl+P (Print)</li>
+                    <li>✔ Disable Print with printer</li>
+                    <li>✔ Disable Ctrl+S (Save page)</li>
+                    <li>✔ Disable Ctrl+C</li>
+                    <li>✔ Disable Ctrl+v</li>
+                </ul>
+                <p><a href="https://wordpress.org/support/plugin/no-copy-block-text-selection/reviews/#new-post" target="blank">If you like the plugin, consider rating the plugin with 5 stars ⭐⭐⭐⭐⭐, encourages us to add new features in the future!</a></p>
+            </div>
+    <?php
+        }
+
+        /**
+         * Register and add settings
+         */
+        public function page_init()
+        {
+            register_setting(
+                'my_option_group', // Option group
+                'my_option_name', // Option name
+                array($this, 'sanitize') // Sanitize
+            );
+
+            add_settings_section(
+                'setting_section_id', // ID
+                'Copy protect', // Title
+                array($this, 'print_section_info'), // Callback
+                'my-setting-admin' // Page
+            );
+
+            add_settings_field(
+                'id_number', // ID
+                'ID Number', // Title 
+                array($this, 'id_number_callback'), // Callback
+                'my-setting-admin', // Page
+                'setting_section_id' // Section           
+            );
+
+            add_settings_field(
+                'title',
+                'Title',
+                array($this, 'title_callback'),
+                'my-setting-admin',
+                'setting_section_id'
+            );
+        }
+    }
+
+    if (is_admin())
+        $my_settings_page = new MySettingsPage();

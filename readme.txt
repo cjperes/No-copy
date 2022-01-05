@@ -85,3 +85,7 @@ Disable Ctrl+v ).
 
 = 1.0.1 - 2021/12/31 =
 - Melhoria na descrição do plugin
+
+= 1.0.2 - 2022/01/05 =
+- Mensagem de sucesso plugin ativo
+- Página de confirmação do plugin
