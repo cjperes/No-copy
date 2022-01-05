@@ -1,12 +1,12 @@
 === No copy allowed - Nork Digital ===
-Contributors: cjperes
-Tags: block,block copy,block ctrlc,block ctrlv,disable copy,disable print,disable print screen,disable printer,content protect, disable copy, disable ctrlc, disable print screen
-Requires at least: 4.5
-Tested up to: 5.8.2
-Stable tag: 4.3
-Requires PHP: 5.2.4
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Contributors: cjperes\
+Tags: block,block copy,block ctrlc,block ctrlv,disable copy,disable print,disable print screen,disable printer,content protect, disable copy, disable ctrlc, disable print screen\
+Requires at least: 4.5\
+Tested up to: 5.8.2\
+Stable tag: 4.3\
+Requires PHP: 5.2.4\
+License: GPLv2 or later\
+License URI: https://www.gnu.org/licenses/gpl-2.0.html\
 
 
 == Description ==
@@ -17,17 +17,17 @@ No configuration is necessary, just activate the PLUGIN and it will be working
 
 Plugin for disable and block copies on a website with a lot of functionalities.
 
-Functionalities:
-Disable copy of text
-Disable right mouse click
-Disable print screen
-Disable print to PDF
-Disable Ctrl+U (view source)
-Disable Ctrl+P (Print)
-Disable Print with printer
-Disable Ctrl+S (Save page)
-Disable Ctrl+C 
-Disable Ctrl+v
+Functionalities:\
+Disable copy of text\
+Disable right mouse click\
+Disable print screen\
+Disable print to PDF\
+Disable Ctrl+U (view source)\
+Disable Ctrl+P (Print)\
+Disable Print with printer\
+Disable Ctrl+S (Save page)\
+Disable Ctrl+C \
+Disable Ctrl+v\
 
 More locks coming soon!
 
