@@ -6,7 +6,7 @@
  * Description: Simples plugin para bloquear copias de texto, print screen, "imprimir" em PDF e desabilitar teclas
  * Author: Caio Peres
  * Author URI: https://github.com/cjperes
- * Version: 1.0.1
+ * Version: 1.0.2
  */
 
 
@@ -93,3 +93,13 @@ function ncjp_footer_scp()
     <body ondragstart="return false;" onselectstart="return false;" oncontextmenu="return false;" onload="NcjpclearData(); " onblur="NcjpclearData(); ">
     <?php
 }
+
+function ncjp_admin_notice__success()
+{
+    ?>
+        <div class="notice notice-success is-dismissible">
+            <p><?php _e('Success! Your site is protected against copying content and images, consider rating the plugin with 5 stars ⭐⭐⭐⭐⭐, we encourage to constantly add new features!'); ?></p>
+        </div>
+    <?php
+}
+add_action('admin_notices', 'ncjp_admin_notice__success');
