@@ -46,7 +46,7 @@ Plugin para bloquear cópias em um site com várias funcionalidades.
 
 Funcionalidades:
 Desativar cópia de texto
-Desativar clique direito do mouse
+Desativar clique com botão direito do mouse
 Desativar tecla Print Screen
 Desativar impressão em PDF
 Desativa impressão com impressoras
@@ -89,3 +89,7 @@ Disable Ctrl+v ).
 = 1.0.2 - 2022/01/05 =
 - Mensagem de sucesso plugin ativo
 - Página de confirmação do plugin
+
+= 1.0.3 - 2022/04/02 =
+- Ajuste mensagem não era dispensada
+- Refatoração e design pattern
