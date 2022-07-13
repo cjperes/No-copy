@@ -95,3 +95,6 @@ Disable Ctrl+v ).
 - Remoção temporaria mensagem de sucesso plugin ativo
 - Refatoração código página do plugin
 - Remoção do bloqueio da tecla CTRL V para melhorar usabilidade em formulários
+
+= 1.0.5 - 2022/07/13 =
+- fix

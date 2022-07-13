@@ -6,7 +6,7 @@
  * Description: Plugin to block text copies, print screen, "print/save as" PDF and disable many copy keys
  * Author: Caio Peres
  * Author URI: https://cjperes.github.io
- * Version: 1.0.4
+ * Version: 1.0.5
  */
 
 if (!defined('ABSPATH')) {
