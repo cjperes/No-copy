@@ -1,9 +1,9 @@
-=== No copy allowed - Nork Digital ===
+=== No copy allowed, disable copy - Nork Tecnologia ===
 Contributors: cjperes
 Tags: block,block copy,block ctrlc,block ctrlv,disable copy,disable print,disable print screen,disable printer,content protect, disable copy, disable ctrlc, disable print screen
 Requires at least: 4.5
-Tested up to: 5.8.2
-Stable tag: 4.3
+Tested up to: 6.0.1
+Stable tag: 4.5
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ Disable Ctrl+P (Print)
 Disable Print with printer
 Disable Ctrl+S (Save page)
 Disable Ctrl+C 
-Disable Ctrl+v
+
 
 More locks coming soon!
 
@@ -46,7 +46,7 @@ Plugin para bloquear cópias em um site com várias funcionalidades.
 
 Funcionalidades:
 Desativar cópia de texto
-Desativar clique com botão direito do mouse
+Desativar clique direito do mouse
 Desativar tecla Print Screen
 Desativar impressão em PDF
 Desativa impressão com impressoras
@@ -54,7 +54,7 @@ Desativar Ctrl + U (ver código fonte)
 Desativar Ctrl + P (Imprimir)
 Desativar Ctrl + S (Salvar página)
 Desativar Ctrl + C
-Desativar Ctrl + v
+
 
 Mais bloqueios em breve
 
@@ -86,10 +86,12 @@ Disable Ctrl+v ).
 = 1.0.1 - 2021/12/31 =
 - Melhoria na descrição do plugin
 
-= 1.0.2 - 2022/01/05 =
+= 1.0.3 - 2022/01/05 =
 - Mensagem de sucesso plugin ativo
 - Página de confirmação do plugin
 
-= 1.0.3 - 2022/04/02 =
-- Ajuste mensagem não era dispensada
-- Refatoração e design pattern
+
+= 1.0.4 - 2022/07/13 =
+- Remoção temporaria mensagem de sucesso plugin ativo
+- Refatoração código página do plugin
+- Remoção do bloqueio da tecla CTRL V para melhorar usabilidade em formulários
